@@ -4,7 +4,7 @@ var hello = require('../app').helloWorld;
 
 describe('Hello World', function() {
   
-  it('deve dar "hello"', function() {
+  it('deve dizer "Hello world"', function() {
     hello().should.be.equal('Hello world');
   });
 
