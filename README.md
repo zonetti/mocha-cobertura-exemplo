@@ -8,6 +8,6 @@ Exemplo de como fazer relatório de cobertura usando Mocha.
 
 Para rodar os testes utilize `npm test` ou `make test`.
 
-Para gerar o relatório de cobertura de código, certifique-se primeiramente de ter instalado o [`jscoverage`][jscoverage], então utilize `make test-cov`.
+Para gerar o relatório de cobertura de código, certifique-se primeiramente de ter instalado o [`jscoverage`][jscoverage], então utilize `make coverage`.
 
 [jscoverage]: https://github.com/visionmedia/node-jscoverage
