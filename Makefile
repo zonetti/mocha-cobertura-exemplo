@@ -1,14 +1,14 @@
-REPORTER=spec
+test: lint
+	@NODE_ENV=test node_modules/.bin/mocha -R spec -t 10000 -b
 
-test:
-	@NODE_ENV=test ./node_modules/.bin/mocha \
-		--reporter $(REPORTER) -b test/*.js
+lint:
+	@node_modules/.bin/jshint src test
 
-test-cov: lib-cov
-	@NODE_ENV=test TEST_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html
-	@rm src-cov -r
+coverage: lib-cov
+	@TEST_COVERAGE=1 NODE_ENV=test ./node_modules/.bin/mocha -R html-cov -t 10000 -b > coverage.html
+	@sudo rm src-cov -r
 
 lib-cov:
-	@jscoverage src src-cov
+	@jscoverage --encoding=UTF-8 src src-cov
 
-.PHONY: test test-watch test-cov
+.PHONY: test

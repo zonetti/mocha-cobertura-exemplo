@@ -1,3 +1,5 @@
 exports.calculadora = require('./calculadora');
 
-exports.helloWorld = require('./hello_world');
+exports.olaMundo = require('./ola_mundo');
+
+exports.web = require('./web');
