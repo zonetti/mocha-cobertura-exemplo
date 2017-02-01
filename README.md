@@ -16,6 +16,6 @@ Para rodar os testes utilize `npm test` ou `make test`.
 
 Para gerar o relatório de cobertura de testes, certifique-se primeiramente de ter instalado o [`jscoverage`][jscoverage], então utilize `make coverage`.
 
-[mocha]: http://visionmedia.github.io/mocha/
+[mocha]: http://mochajs.org/
 [jscoverage]: https://github.com/visionmedia/node-jscoverage/
 [jshint]: https://github.com/jshint/jshint/
